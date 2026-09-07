@@ -14,7 +14,7 @@ public class Main {
     }
 
     // Задание № 2 Мобильное приложение
-    public static void theMbileApp(int clientOS, int deviceYear) {
+    public static void recommendAppVersion(int clientOS, int deviceYear) {
         int currentYear = LocalDate.now().getYear();
         boolean isOldDevice = deviceYear < 2015;
         if (clientOS == 0 && isOldDevice) {
@@ -54,10 +54,10 @@ public class Main {
         checkYear(1960);
 
         System.out.println("\n\tЗадание #2\n");
-        theMbileApp(0, 2014); // iOS, старое → облегченная
-        theMbileApp(1, 2010); // Android, старое → облегченная
-        theMbileApp(0, 2025); // iOS, новое → обычная
-        theMbileApp(1, 2026); // Android, новое → обычная
+        recommendAppVersion(0, 2014); // iOS, старое → облегченная
+        recommendAppVersion(1, 2010); // Android, старое → облегченная
+        recommendAppVersion(0, 2025); // iOS, новое → обычная
+        recommendAppVersion(1, 2026); // Android, новое → обычная
 
         System.out.println("\n\tЗадание #3\n");
         int deliveryDistance = 95;
